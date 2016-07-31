@@ -1,3 +1,5 @@
+#!/usr/bin/env python3
+
 import random
 
 english = open('english.txt')
@@ -10,15 +12,11 @@ for line in english:
 english.close()
 
 while words > 0:
-    x = random.randint(11111, 66666)
-    if '0' in str(x):
-        words = words
-    elif '7' in str(x):
-        words = words
-    elif '8' in str(x):
-        words = words
-    elif '9' in str(x):
-        words = words
-    else:
-        print(wordslist[x])
-        words -= 1
+    dices = 5
+    index = ''
+    while dices > 0:
+        dice = random.randint(1, 6)
+        index += str(dice)
+        dices -= 1
+    words -= 1
+    print(wordslist[int(index)])
