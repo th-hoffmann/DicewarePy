@@ -1,5 +1,3 @@
-DicewarePy v.01 07/28/2016
-
 ##DicewarePy
 
 DicewarePy is a simple tool to generate random passwords based on the excellent Diceware™ Passphrase created by Arnold G. Reinhold.
